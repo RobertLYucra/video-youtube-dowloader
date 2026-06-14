@@ -20,11 +20,14 @@
 
 ## 🚀 Instalación y Uso (Versión Portable)
 
-La forma recomendada de usar esta aplicación en Windows es a través de la versión **Portable** compilada. 
+La forma recomendada de usar esta aplicación en Windows es a través de la versión **Portable** compilada. No requiere instalaciones complejas ni permisos de administrador.
 
-1.  Descarga el archivo `.zip` de la última versión.
-2.  Extrae la carpeta en tu computadora.
-3.  Haz doble clic en **`Video Downloader Pro.exe`**.
+📥 **[Descargar Video Downloader Pro (MediaFire)](https://www.mediafire.com/file/k9yzdj9i45frnzk/VideoDownloaderPro-Windows.zip/file)**
+
+### Pasos:
+1.  Descarga el archivo `.zip` desde el enlace de arriba.
+2.  Extrae la carpeta en tu computadora (ej. en el Escritorio o Documentos).
+3.  Haz doble clic en **`Video Downloader Pro.exe`** (tiene un ícono).
 4.  Pega tus enlaces, elige MP4 (Video) o MP3 (Audio) y presiona **Descargar**. ¡Cero instalaciones complejas!
 
 ## 💻 Para Desarrolladores (Código Fuente)
