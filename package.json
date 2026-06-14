@@ -2,14 +2,30 @@
   "name": "video-dowloader",
   "version": "1.0.0",
   "description": "",
-  "main": "descargar-canales.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.robertlyucra.videodownloader",
+    "productName": "Video Downloader Pro",
+    "asar": false,
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^17.4.2"
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "electron": "^34.1.1",
+    "electron-builder": "^25.1.8"
   }
 }

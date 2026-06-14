@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="glass-container">
+        <header style="position: relative;">
+            <h1><span>Video</span> Downloader <span>Pro</span></h1>
+            <button id="themeToggle" class="theme-btn" title="Cambiar Tema">🌙</button>
+            <p>Descarga videos y música con máxima calidad</p>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <label for="urlInput">Enlaces (Pega links y presiona Enter)</label>
+                <div class="tags-input-container" id="tagsContainer">
+                    <input type="text" id="urlInput" placeholder="Pega tus enlaces de YouTube aquí...">
+                </div>
+            </div>
+
+            <div class="settings-row">
+                <div class="input-group">
+                    <label for="formatSelect">Formato</label>
+                    <select id="formatSelect">
+                        <option value="video">Video (MP4)</option>
+                        <option value="audio">Solo Audio (MP3)</option>
+                    </select>
+                </div>
+                
+                <div class="input-group" id="resGroup">
+                    <label for="resSelect">Calidad Máxima</label>
+                    <select id="resSelect">
+                        <option value="2160">4K (2160p)</option>
+                        <option value="1440">2K (1440p)</option>
+                        <option value="1080" selected>Full HD (1080p)</option>
+                        <option value="720">HD (720p)</option>
+                        <option value="480">SD (480p)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="forceRedownload">
+                <label for="forceRedownload" style="margin: 0; cursor: pointer; text-transform: none; flex: 1;">Forzar re-descarga (Ignorar historial)</label>
+                <button id="clearHistoryBtn" class="secondary-btn" title="Limpiar historial para poder descargar todo de nuevo">🗑️ Limpiar Historial</button>
+            </div>
+
+            <button id="downloadBtn" class="primary-btn">
+                <span>Descargar Ahora</span>
+                <div class="spinner" id="btnSpinner"></div>
+            </button>
+            <button id="cancelBtn" class="cancel-btn" style="display: none;">
+                <span>🛑 Cancelar Descarga</span>
+            </button>
+
+            <div class="console-box">
+                    <div class="console-header">
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <span>Registro de proceso</span>
+                            <span id="processTimer" style="display: none; font-family: monospace; color: var(--primary);">00:00</span>
+                        </div>
+                        <div class="status-dot"></div>
+                    </div>
+                <div id="logOutput" class="log-content">Esperando...</div>
+            </div>
+        </main>
+    </div>
+
+    <div id="toastContainer" class="toast-container"></div>
+    <script src="renderer.js"></script>
+</body>
+</html>
