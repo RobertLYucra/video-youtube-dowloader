@@ -3,6 +3,7 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const { spawn } = require('child_process');
 const fs = require('fs');
+const ffmpeg = require('ffmpeg-static');
 
 let mainWindow;
 let currentDownloadProcess = null;
@@ -134,6 +135,11 @@ function runDownload(event, { urls, resolucion, soloAudio, outputFolder, forceRe
 
     // Prevenir descarga accidental de Mixes o Playlists enteras
     args.push('--no-playlist');
+
+    // Forzar el uso del ffmpeg-static que descargamos en node_modules
+    if (ffmpeg) {
+        args.push('--ffmpeg-location', ffmpeg);
+    }
 
     if (process.env.YT_DLP_IGNORAR_ERRORES === 'true') {
         args.push('-i');
