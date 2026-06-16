@@ -23,7 +23,7 @@
 La forma recomendada de usar esta aplicación en Windows es a través de la versión **Portable** compilada. No requiere instalaciones complejas ni permisos de administrador.
 
 ### Pasos:
-1.  Descarga el archivo `.zip` desde el enlace de arriba.
+1.  Descarga el archivo `.zip` desde la sección de **Releases** de este repositorio.
 2.  Extrae la carpeta en tu computadora (ej. en el Escritorio o Documentos).
 3.  Haz doble clic en **`Video Downloader Pro.exe`** (tiene un ícono).
 4.  Pega tus enlaces, elige MP4 (Video) o MP3 (Audio) y presiona **Descargar**. ¡Cero instalaciones complejas!
