@@ -22,6 +22,8 @@
 
 La forma recomendada de usar esta aplicación en Windows es a través de la versión **Portable** compilada. No requiere instalaciones complejas ni permisos de administrador.
 
+**[🔗 Descargar Video Downloader Pro (.zip)](https://www.mediafire.com/file/yog7uor9kl2yw6s/Video_Dowloader_Pro.zip/file)**
+
 ### Pasos:
 1.  Descarga el archivo `.zip` desde el enlace de arriba.
 2.  Extrae la carpeta en tu computadora (ej. en el Escritorio o Documentos).
