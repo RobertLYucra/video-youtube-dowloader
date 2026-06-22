@@ -34,8 +34,8 @@ Si quieres correr o modificar el código fuente del proyecto:
 
 ### 1. Requisitos Previos
 - [Node.js](https://nodejs.org/) instalado.
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) (`yt-dlp.exe` debe estar en la carpeta raíz para Windows).
-- [FFmpeg](https://ffmpeg.org/) (Opcional pero muy recomendado, para fusionar alta resolución).
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) (`yt-dlp.exe` se Descarga con npm install).
+- [FFmpeg](https://ffmpeg.org/) (Opcional pero muy recomendado, para fusionar alta resolución - se Descarga con npm install).
 
 ### 2. Instalación Local
 ```bash
