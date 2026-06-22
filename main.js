@@ -151,7 +151,7 @@ function runDownload(event, { urls, resolucion, soloAudio, outputFolder, forceRe
     }
 
     // Restringir caracteres especiales problemáticos en Windows
-    args.push('--restrict-filenames');
+    // args.push('--restrict-filenames');
     
     // Ruta de guardado final: limitamos el título a 100 caracteres para evitar el error de ruta muy larga en Windows (MAX_PATH)
     args.push('-o', path.join(folderPath, '%(title).100s.%(ext)s'));
